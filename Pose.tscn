@@ -1,0 +1,87 @@
+[gd_scene load_steps=11 format=2]
+
+[sub_resource type="StreamTexture" id=1]
+load_path = "res://.import/LowBod.png-070c2330b5a724f0441e1faae2f033a8.stex"
+
+[sub_resource type="StreamTexture" id=2]
+load_path = "res://.import/RHand.png-28d586eca425ab40fa0a73cafebccc7b.stex"
+
+[sub_resource type="StreamTexture" id=3]
+load_path = "res://.import/LHand.png-8b337dcae813412263d65089caa18fbc.stex"
+
+[sub_resource type="StreamTexture" id=4]
+load_path = "res://.import/Chest.png-017d8397062a17fb93a3b0c3debc27a2.stex"
+
+[sub_resource type="StreamTexture" id=5]
+load_path = "res://.import/Shotgun.png-c91bf067d4476fd3c6bbca07be105351.stex"
+
+[sub_resource type="StreamTexture" id=6]
+load_path = "res://.import/LArm.png-f577b8c68c3f266aa0666da3223a37dd.stex"
+
+[sub_resource type="StreamTexture" id=7]
+load_path = "res://.import/LShoulder.png-5b6f600ce320c6c7da507f835decba92.stex"
+
+[sub_resource type="StreamTexture" id=8]
+load_path = "res://.import/RArm.png-dcb8c963b333f58c2bd9e628c94f673f.stex"
+
+[sub_resource type="StreamTexture" id=9]
+load_path = "res://.import/RShoulder.png-bd8da5fd891f613843987b9f10e8148b.stex"
+
+[sub_resource type="StreamTexture" id=10]
+load_path = "res://.import/Head.png-3b9e4bf5ef7f3af3841e316bb22f0d90.stex"
+
+[node name="RHand" type="Sprite"]
+position = Vector2( 163.306, 220.834 )
+rotation = -0.13287
+
+[node name="Sprite6" type="Sprite" parent="."]
+position = Vector2( 21.9839, -14.5676 )
+rotation = 0.337102
+texture = SubResource( 1 )
+
+[node name="RHand" type="Sprite" parent="."]
+position = Vector2( -10.4627, -14.4983 )
+rotation = -0.190829
+texture = SubResource( 2 )
+
+[node name="LHand" type="Sprite" parent="."]
+position = Vector2( 9.03144, 21.1903 )
+rotation = 1.55759
+texture = SubResource( 3 )
+offset = Vector2( 1.98407, 1.15979 )
+
+[node name="Sprite3" type="Sprite" parent="."]
+position = Vector2( 26.8336, -21.5064 )
+rotation = 0.887421
+texture = SubResource( 4 )
+
+[node name="Shotgun" type="Sprite" parent="."]
+position = Vector2( -5.31026, 13.267 )
+rotation = 0.132157
+scale = Vector2( 1, 1 )
+texture = SubResource( 5 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 33.1104, 15.8427 )
+rotation = 0.951397
+texture = SubResource( 6 )
+
+[node name="Sprite2" type="Sprite" parent="."]
+position = Vector2( 50.247, 1.91449 )
+rotation = 1.23029
+texture = SubResource( 7 )
+
+[node name="Sprite4" type="Sprite" parent="."]
+position = Vector2( -6.31439, -40.1464 )
+rotation = 0.728243
+texture = SubResource( 8 )
+
+[node name="Sprite5" type="Sprite" parent="."]
+position = Vector2( 2.92528, -51.1003 )
+rotation = 0.44991
+texture = SubResource( 9 )
+
+[node name="Sprite7" type="Sprite" parent="."]
+position = Vector2( 24.8292, -27.2226 )
+rotation = 0.163254
+texture = SubResource( 10 )

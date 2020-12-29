@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Obstacle.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Player2mod.tscn" type="PackedScene" id=2]
+
+[node name="World" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource( 2 )]
+position = Vector2( 448.141, 199.275 )
+collision_mask = 2147483649
+
+[node name="Obstacle2" parent="." instance=ExtResource( 1 )]
+position = Vector2( 662.94, 456.699 )
+mass = 102.041
+
+[node name="Obstacle3" parent="." instance=ExtResource( 1 )]
+position = Vector2( 797.634, 166.021 )
+
+[node name="Obstacle" parent="." instance=ExtResource( 1 )]
+position = Vector2( 270.847, 357.049 )

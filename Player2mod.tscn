@@ -1,0 +1,28 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Chest.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Player2mod.gd" type="Script" id=2]
+[ext_resource path="res://Butt.tscn" type="PackedScene" id=3]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 35.0
+
+[sub_resource type="CircleShape2D" id=2]
+radius = 40.0
+
+[node name="Player" type="KinematicBody2D"]
+position = Vector2( 415.779, 240.416 )
+script = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource( 2 )
+
+[node name="Butt" parent="." instance=ExtResource( 3 )]
+
+[node name="Chest" parent="." instance=ExtResource( 1 )]
+[connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
